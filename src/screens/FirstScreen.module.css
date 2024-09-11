@@ -1,0 +1,160 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/הורים.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  
+  .content {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .descriptionWrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 3rem 1.5rem 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .emphasisWrapper {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    padding: 0.3rem 0.7rem;
+    border-radius: 15px;
+  }
+  
+  .emphasis {
+    color: #fff;
+    font-family: "AssistantR";
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #333;
+    font-family: "AssistantR";
+    direction: rtl;
+    margin: 0;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #000000;
+    font-family: "Assistant";
+    direction: rtl;
+    margin: 0 0 0.5rem;
+  }
+  
+  .arrowWrapper {
+    margin-top: 10px;
+  }
+  
+  .arrow {
+    color: #000000;
+    animation: bounce 1s infinite alternate ease-in-out;
+  }
+  
+  @keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(5px); }
+  }
+  
+  /* Media Queries */
+  @media  (max-width: 350px) {
+    .container { padding: 1.2rem; }
+    .descriptionWrapper { padding: 2.2rem 1.2rem 1.2rem; }
+    .emphasis { font-size: 1rem; }
+    .description { font-size: 1rem; }
+    .title { font-size: 1.6rem; }
+  } 
+  
+  @media (min-width: 350px) and (max-width: 450px) {
+    .container { padding: 1.2rem; }
+    .descriptionWrapper { padding: 2.2rem 1.2rem 1.2rem; }
+    .emphasis { font-size: 1rem; }
+    .description { font-size: 1rem; }
+    .title { font-size: 1.6rem; }
+  }
+  
+  @media (min-width: 450px) and (max-width: 550px) {
+    .container { padding: 1.5rem; }
+    .descriptionWrapper { padding: 2.3rem 1.3rem 1.3rem; }
+    .emphasis { font-size: 1.1rem; }
+    .description { font-size: 1.1rem; }
+    .title { font-size: 1.7rem; }
+  }
+  
+  @media (min-width: 550px) and (max-width: 650px) {
+    .content { max-width: 90%; }
+    .descriptionWrapper { border-radius: 15px; }
+    .emphasisWrapper { top: -18px; }
+    .description { line-height: 1.5; }
+  }
+  
+  @media (min-width: 650px) and (max-width: 750px) {
+    .content { max-width: 85%; }
+    .descriptionWrapper { padding: 2.4rem 1.4rem 1.4rem; }
+    .emphasis { font-size: 1.15rem; }
+    .description { font-size: 1.15rem; }
+    .title { font-size: 1.8rem; }
+  }
+  
+  @media (min-width: 750px) and (max-width: 850px) {
+    .container { padding: 1.8rem; }
+    .content { max-width: 80%; }
+    .descriptionWrapper { margin-bottom: 1.5rem; }
+  }
+  
+  @media (min-width: 850px) and (max-width: 950px) {
+    .content { max-width: 75%; }
+    .descriptionWrapper { padding: 2.5rem 1.5rem 1.5rem; }
+    .emphasis { font-size: 1.2rem; letter-spacing: 1px; }
+    .description { font-size: 1.2rem; }
+    .title { font-size: 1.9rem; }
+  }
+  
+  @media (min-width: 950px) and (max-width: 1050px) {
+    .container { padding: 2rem; }
+    .content { max-width: 70%; }
+  }
+  
+  @media (min-width: 1050px) and (max-width: 1150px) {
+    .content { max-width: 65%; }
+    .descriptionWrapper { border-radius: 20px; }
+    .emphasisWrapper { top: -20px; }
+  }
+  
+  @media (min-width: 1150px) and (max-width: 1250px) {
+    .content { max-width: 60%; }
+    .title { font-size: 2rem; }
+  }
+  
+  
