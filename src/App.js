@@ -5,6 +5,8 @@ import ThirdScreen from './screens/ThirdScreen';
 import SecondScreen from './screens/SecondScreen';
 import NavBarNew from './components/NewNav/NavBarNew';
 import Who from './components/who/Who';
+import ForthScreen from './screens/ForthScreen';
+import WhoFits from './components/fit/WhoFits';
 
 function App() {
   return <>
@@ -13,6 +15,8 @@ function App() {
   <ThirdScreen/>
   <SecondScreen/>
   <Who/>
+  <ForthScreen/>
+  <WhoFits/>
   </>
 }
 
