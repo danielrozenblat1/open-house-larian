@@ -7,6 +7,7 @@ import NavBarNew from './components/NewNav/NavBarNew';
 import Who from './components/who/Who';
 import ForthScreen from './screens/ForthScreen';
 import WhoFits from './components/fit/WhoFits';
+import ByMe from './components/ByMe/ByMe';
 
 function App() {
   return <>
@@ -17,6 +18,7 @@ function App() {
   <Who/>
   <ForthScreen/>
   <WhoFits/>
+  <ByMe/>
   </>
 }
 
