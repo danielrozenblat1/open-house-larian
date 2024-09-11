@@ -1,0 +1,73 @@
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+  }
+  
+  .shape {
+    width: 160px;
+    padding: 0.8rem 1.2rem;
+    background: linear-gradient(135deg, #9dadc6 0%, #e2cbc3 100%);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 10px #d0d0d0, -4px -4px 10px #ffffff;
+    transition: all 1s ease;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttonText {
+    font-family: 'Assistant', sans-serif;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  @media (min-width: 350px) {
+    .shape {
+      width: 180px;
+      padding: 0.9rem 1.3rem;
+      border-radius: 18px;
+    }
+  
+    .buttonText {
+      font-size: 1.15rem;
+    }
+    .buttonWrapper {
+        margin:15px auto
+    }
+  }
+  
+  @media (min-width: 450px) {
+    .shape {
+      width: 190px;
+      padding: 0.95rem 1.4rem;
+      border-radius: 19px;
+    }
+    .buttonWrapper {
+        margin:15px auto
+    }
+    .buttonText {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (min-width: 550px) {
+    .shape {
+      width: 200px;
+      padding: 1rem 1.5rem;
+      border-radius: 20px;
+      box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+    }
+  
+    .buttonText {
+      font-size: 1.2rem;
+    }
+  }

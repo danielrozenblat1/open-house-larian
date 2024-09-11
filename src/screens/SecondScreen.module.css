@@ -1,32 +1,94 @@
-.image{
-    width:30vw;
-    display: flex;
-    margin:0 auto;
-    justify-content: center;
-}
-.image2{
-    height:60vh;
-    object-fit: cover;
-display: flex;
-justify-content: center;
-   
-    border-radius: 20px;
-    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.345);
-}
-.title{
-    font-size:4rem;
-    font-family: "RubikWet";
+.description {
+    font-family: 'AssistantR';
+    font-size: 1.5rem;
+    direction: rtl;
+    margin: 2% auto;
+    width: 50%;
     text-align: center;
-    margin:2% auto;
-    direction:rtl
-}
-
-.claim{
-    font-size:2.4rem;
-width:30%;
-line-height: 1.2;
-font-family: "RubikWet";
-text-align: center;
-margin: 2% auto;
-direction:rtl
-}
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 3% auto;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 350px) {
+    .description {
+      font-size: 1rem;
+      width: 95%;
+      margin: 1% auto;
+    }
+    .row {
+      margin: 2% auto;
+    }
+  }
+  
+  @media (min-width: 350px) and (max-width: 450px) {
+    .description {
+      font-size: 1.1rem;
+      width: 90%;
+    }
+  }
+  
+  @media (min-width: 450px) and (max-width: 550px) {
+    .description {
+      font-size: 1.2rem;
+      width: 85%;
+    }
+  }
+  
+  @media (min-width: 550px) and (max-width: 650px) {
+    .description {
+      font-size: 1.25rem;
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 650px) and (max-width: 750px) {
+    .description {
+      font-size: 1.3rem;
+      width: 75%;
+    }
+  }
+  
+  @media (min-width: 750px) and (max-width: 850px) {
+    .description {
+      font-size: 1.35rem;
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 850px) and (max-width: 950px) {
+    .description {
+      font-size: 1.4rem;
+      width: 65%;
+    }
+  }
+  
+  @media (min-width: 950px) and (max-width: 1050px) {
+    .description {
+      font-size: 1.45rem;
+      width: 60%;
+    }
+  }
+  
+  @media (min-width: 1050px) and (max-width: 1150px) {
+    .description {
+      font-size: 1.48rem;
+      width: 55%;
+    }
+  }
+  
+  @media (min-width: 1150px) and (max-width: 1250px) {
+    .description {
+      font-size: 1.50rem;
+      width: 52%;
+    }
+  }
+  
+  

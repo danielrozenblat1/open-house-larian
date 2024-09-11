@@ -1,0 +1,135 @@
+.minimalistBox {
+    width: 240px;
+    min-height: 160px;
+    border: none;
+    padding: 24px;
+    position: relative;
+    margin: 25px auto;
+    background-color: #ffffff;  /* Light color from the gradient for the house body */
+    border-radius: 30px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .minimalistBox::before {
+    content: '';
+    position: absolute;
+    top: -64px;
+    left: -16px;
+    right: -16px;
+    height: 80px;
+    background-color: #9dadc6;  /* Darker color from the gradient for the main roof */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .minimalistBox::after {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: -12px;
+    right: -12px;
+    height: 76px;
+    background-color: #b5bfd4;  /* Mid-tone between the two gradient colors for roof detail */
+    clip-path: polygon(50% 10%, 3% 100%, 97% 100%);
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .title {
+    font-family: 'Assistant', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    color: #4a4a4a;
+    text-align: center;
+    font-size: 1.28em;
+    z-index: 1;
+  }
+  
+  .description {
+    font-family: 'AssistantR', sans-serif;
+    color: #6a6a6a;
+    text-align: center;
+    z-index: 1;
+    padding: 0 12px;
+    line-height: 1.5;
+    font-size: 0.8em;
+  }
+  @media (max-width: 350px) {
+    /* Styles for screens smaller than 350px */
+    .minimalistBox {
+      margin: 50px auto;  /* Explicitly set for screens under 350px */
+    }
+  }
+  @media (min-width: 350px) {
+    .minimalistBox {
+      width: 250px;
+      min-height: 180px;
+      padding: 27px;
+      margin-top: 72px;
+    }
+    
+    .minimalistBox::before {
+      top: -72px;
+      left: -18px;
+      right: -18px;
+      height: 90px;
+    }
+    
+    .minimalistBox::after {
+      top: -68px;
+      left: -14px;
+      right: -14px;
+      height: 86px;
+    }
+    
+    .title {
+      font-size: 1.44em;
+    }
+    
+    .description {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (min-width: 450px) {
+    .minimalistBox {
+      width: 255px;
+      min-height: 190px;
+      padding: 28px;
+      margin-top: 76px;
+    }
+    
+    .minimalistBox::before {
+      top: -76px;
+      left: -19px;
+      right: -19px;
+      height: 95px;
+    }
+    
+    .minimalistBox::after {
+      top: -71px;
+      left: -14px;
+      right: -14px;
+      height: 90px;
+    }
+    
+    .title {
+      font-size: 1.52em;
+    }
+    
+    .description {
+      font-size: 0.95em;
+    }
+  }
+  @media (min-width: 600px) {
+    .minimalistBox {
+        width: 255px;
+        min-height: 190px;
+        padding: 28px;
+       margin:70px 40px
+      }
+
+  }
