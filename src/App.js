@@ -4,6 +4,7 @@ import FirstScreen from './screens/FirstScreen';
 import ThirdScreen from './screens/ThirdScreen';
 import SecondScreen from './screens/SecondScreen';
 import NavBarNew from './components/NewNav/NavBarNew';
+import Who from './components/who/Who';
 
 function App() {
   return <>
@@ -11,6 +12,7 @@ function App() {
   <FirstScreen/>
   <ThirdScreen/>
   <SecondScreen/>
+  <Who/>
   </>
 }
 
