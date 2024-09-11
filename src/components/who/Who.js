@@ -5,7 +5,7 @@ import larian from "../../images/לריאן לרמן.png"
 const Who = () => {
   return (
     <div className={styles.aboutUs}>
-      <h2 className={styles.title}>קצת עלי</h2>
+      <h2 className={styles.title} id="מי אני">קצת עלי</h2>
       
       <div className={styles.founders}>
         <div className={styles.founder}>
@@ -32,7 +32,7 @@ const Who = () => {
 <p className={styles.description}>
 יש לי קליניקה בשכונת אחיסמך החדשה בה אני מלווה ומדריכה הורים ובנוסף במרכז ביתי אני מארחת הורים למעגלי הורות להורים שנמצאים עם תינוקם בבית ורוצים מרחב של יצירת אינטרקציות חברתיות עבורם ועבור תינוקם וגם מכלול של העשרת ידע והקניית כלים בתחום ההורות.
 </p>
-<h1 className={styles.title}>הכירו את: הבית המארח</h1>
+<h1 className={styles.title} id="הבית המארח">הכירו את: הבית המארח</h1>
 {/* //אפשר לשים תמונה של הלוגו */}
       {/* <p className={styles.description}>
   מרכז פילינג הינו מקפצה להעלאת הערך והביטחון העצמי של הילדים בעיני עצמם.

@@ -39,7 +39,7 @@ const NavBarNew = () => {
     }
   };
 
-  const menuItems = ['המלצות', 'מי אנחנו', 'זמני פעילות','צור קשר' ];
+  const menuItems = ['הבית המארח', 'מי אני' ];
 
   return (
     <nav className={styles.navbar}>
