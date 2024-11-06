@@ -1,11 +1,11 @@
 .xmark {
   font-size: 30px; 
-  color: #87CEFA; /* Light Sky Blue */
+  color: #6a6a6a; /* Darker gray */
 }
 
 .checkmark {
   font-size: 30px; 
-  color: #FFB347; /* Light Orange */
+  color: #b0988a; /* Soft brown */
 }
 
 .wrapY {
@@ -30,7 +30,7 @@
   justify-content: flex-start;
   direction: rtl;
   width: 85%;
-  color: #000000; /* Light Cyan */
+  color: #4a4a4a; /* Dark gray */
   padding: 15px 20px;
 }
 
@@ -39,17 +39,17 @@
   font-family: "Assistant";
   text-align: center;
   margin: 2% auto;
-  color: #87CEFA; /* Light Sky Blue */
+  color: #b0988a; /* Soft brown */
   justify-content: center;
-  text-shadow: 2px 2px 5px rgba(135, 206, 250, 0.3);
+  text-shadow: 2px 2px 5px rgba(176, 152, 138, 0.3);
 }
 
 .header {
   font-size: 2rem;
   font-family: "Assistant";
   text-align: center;
-  color: #9dadc6; /* Light Blue */
-  text-shadow: 2px 2px 3px rgba(173, 216, 230, 0.2);
+  color: #8c7b6e; /* Darker brown */
+  text-shadow: 2px 2px 3px rgba(140, 123, 110, 0.2);
 }
 
 .description {
@@ -58,7 +58,7 @@
   text-align: right;
   width: calc(100% - 40px);
   margin-right: 10px;
-  color: #000000; /* Light Cyan */
+  color: #4a4a4a; /* Dark gray */
 }
 @media only screen and (max-width: 350px) {
   .xmark {

@@ -6,7 +6,7 @@ const Button = ({ text, message,}) => {
     const handleClick = () => {
         const phoneNumber = "+972544596735";
         // Set the message content
-        const message ="היי לריאן ויוגב ,אני רוצה לשמוע ממכם עוד על..";
+        const message ="היי לריאן,אני רוצה לשמוע ממך עוד על..";
     
         // Encode the message for the URL
         const encodedMessage = encodeURIComponent(message);
