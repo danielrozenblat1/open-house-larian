@@ -4,10 +4,22 @@ import styles from './House.module.css';
 
 const MinimalistBox = ({ title, description }) => {
   useEffect(() => {
-    ScrollReveal().reveal(`.${styles.minimalistBox}`, {
-        duration: 600,
+
+      ScrollReveal().reveal(`.${styles.title}`, {
+        duration: 800,
         distance: "60px",
-        origin: "top",
+        origin: "right",
+        easing: "ease-out",
+        reset: false,
+        viewFactor: 0.2,
+        interval: 200,
+        delay: 100,
+        scale: 1,
+      });
+      ScrollReveal().reveal(`.${styles.description}`, {
+        duration: 800,
+        distance: "60px",
+        origin: "left",
         easing: "ease-out",
         reset: false,
         viewFactor: 0.2,

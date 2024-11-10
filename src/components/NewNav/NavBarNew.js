@@ -21,7 +21,7 @@ const NavBarNew = () => {
 
   const handleClick = () => {
     const phoneNumber = "+972544596735";
-    const message ="היי לריאן ויוגב ,אני רוצה לשמוע מכם עוד על..";
+    const message ="היי לריאן ,אני רוצה לשמוע עוד על..";
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappURL, "_blank");
@@ -39,7 +39,7 @@ const NavBarNew = () => {
     }
   };
 
-  const menuItems = ['הבית המארח', 'מי אני' ];
+  const menuItems = ['BABY . LOVE', 'מי אני' ];
 
   return (
     <nav className={styles.navbar}>

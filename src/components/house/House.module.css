@@ -1,18 +1,39 @@
+/* House.module.css */
 .minimalistBox {
   width: 250px;
-  min-width: 250px;
-  min-height: 250px;
+  min-width: 280px;
+  min-height: 280px;
   border: none;
   padding: 24px;
   position: relative;
   margin: 25px auto;
-  background-color: #f8f7f6;
   border-radius: 50%;
   box-shadow: 0 8px 24px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* וריאציות צבעים - ניתן להוסיף כקלאסים נוספים */
+.minimalistBox:nth-of-type(1) {
+  background-color: #e6d9d1;
+}
+
+.minimalistBox:nth-of-type(2) {
+  background-color: #e6d9d1b7;
+}
+
+.minimalistBox:nth-of-type(3) {
+  background-color: rgba(229, 212, 199, 0.863);
+}
+
+.minimalistBox:nth-of-type(4) {
+  background-color: #e6d9d1;
+}
+
+.minimalistBox:nth-of-type(5) {
+  background-color: #e6d9d1b7;
 }
 
 .title {
@@ -45,14 +66,16 @@
 
 @media (min-width: 350px) {
   .minimalistBox {
-    min-width: 290px;
-    min-height: 290px;
+    min-width: 310px;
+    min-height: 310px;
     padding: 27px;
     margin-top: 12px;
   }
   
   .title {
-    font-size: 1.44em;
+    font-size: 1.3em;
+    width: 90%;
+    margin: 0 auto;
   }
   
   .description {
@@ -62,14 +85,16 @@
 
 @media (min-width: 450px) {
   .minimalistBox {
-    min-width: 280px;
-    min-height: 280px;
+    min-width: 310px;
+    min-height: 310px;
     padding: 28px;
-    margin-top:16px;
+    margin-top: 16px;
   }
   
   .title {
-    font-size: 1.52em;
+    font-size: 1.35em;
+    width: 90%;
+    margin: 0 auto;
   }
   
   .description {
@@ -79,9 +104,15 @@
 
 @media (min-width: 600px) {
   .minimalistBox {
-    min-width: 270px;
-    min-height: 270px;
+    min-width: 320px;
+    min-height: 320px;
     padding: 28px;
     margin: 70px 40px;
+  }
+  
+  .title {
+    font-size: 1.35em;
+    width: 70%;
+    margin: 0 auto;
   }
 }

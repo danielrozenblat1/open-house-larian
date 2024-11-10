@@ -20,7 +20,7 @@ const FirstScreen = () => {
            מגיל לידה ועד גיל שנה
           </p>}
         </div>
-        <h1 className={styles.title}>BABY . LOVE</h1>
+        {/* <h1 className={styles.title}>BABY . LOVE</h1> */}
         <div className={styles.arrowWrapper}>
           <MoveDown className={styles.arrow} size={32}  strokeWidth={1} />
         </div>
