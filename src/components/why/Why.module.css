@@ -24,8 +24,8 @@
 }
 
 .title {
-    font-family: 'Assistant';
-    font-size: 1.5rem;
+    font-family: 'AmaticR';
+    font-size: 2.5rem;
     color: #555048; /* גוון חום-אפור כהה לכותרת */
     margin: 2% auto;
     text-align: center;
@@ -48,7 +48,7 @@
         padding: 15px;
     }
     .title {
-        font-size: 1.2rem;
+        font-size: 2.2rem;
     }
     .description {
         font-size: 0.9rem;
@@ -61,7 +61,7 @@
         padding: 18px;
     }
     .title {
-        font-size: 1.3rem;
+        font-size: 2.3rem;
     }
     .description {
         font-size: 0.95rem;
@@ -71,55 +71,55 @@
 /* 450px - 550px */
 @media (min-width: 450px) and (max-width: 550px) {
     .title {
-        font-size: 1.4rem;
+        font-size: 2.4rem;
     }
 }
 
 /* 550px - 650px */
 @media (min-width: 550px) and (max-width: 650px) {
     .title {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 }
 
 /* 650px - 750px */
 @media (min-width: 650px) and (max-width: 750px) {
     .title {
-        font-size: 1.6rem;
+        font-size: 2.6rem;
     }
 }
 
 /* 750px - 850px */
 @media (min-width: 750px) and (max-width: 850px) {
     .title {
-        font-size: 1.7rem;
+        font-size: 2.7rem;
     }
 }
 
 /* 850px - 950px */
 @media (min-width: 850px) and (max-width: 950px) {
     .title {
-        font-size: 1.8rem;
+        font-size: 2.8rem;
     }
 }
 
 /* 950px - 1050px */
 @media (min-width: 950px) and (max-width: 1050px) {
     .title {
-        font-size: 1.9rem;
+        font-size: 2.9rem;
     }
 }
 
 /* 1050px - 1150px */
 @media (min-width: 1050px) and (max-width: 1150px) {
     .title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
 /* 1150px - 1250px */
 @media (min-width: 1150px) and (max-width: 1250px) {
     .title {
-        font-size: 2.1rem;
+        font-size: 3.1rem;
     }
 }

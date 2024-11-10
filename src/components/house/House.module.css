@@ -37,12 +37,12 @@
 }
 
 .title {
-  font-family: 'Assistant', sans-serif;
+  font-family: 'AmaticR', sans-serif;
   margin-top: 8px;
   margin-bottom: 12px;
   color: #555048;
   text-align: center;
-  font-size: 1.28em;
+  font-size: 3.2em;
   width: 100%;
   z-index: 1;
   padding: 0 12px;
@@ -73,7 +73,7 @@
   }
   
   .title {
-    font-size: 1.3em;
+    font-size: 2.3em;
     width: 90%;
     margin: 0 auto;
   }
@@ -92,7 +92,7 @@
   }
   
   .title {
-    font-size: 1.35em;
+    font-size: 2.35em;
     width: 90%;
     margin: 0 auto;
   }
@@ -111,7 +111,7 @@
   }
   
   .title {
-    font-size: 1.35em;
+    font-size: 2em;
     width: 70%;
     margin: 0 auto;
   }

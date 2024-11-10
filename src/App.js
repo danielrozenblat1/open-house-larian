@@ -21,7 +21,7 @@ function App() {
   <SecondScreen/>
   <Who/>
   <ForthScreen/>
-  <WhoFits/>
+  {/* <WhoFits/> */}
   <ByMe/>
   </>
 }

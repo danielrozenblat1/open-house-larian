@@ -1,10 +1,10 @@
 import Why from "../components/why/Why"
 import styles from "./SecondScreen.module.css"
-import confident from "../Icons/wired-outline-1509-infant-massage-hover-pinch.json"
-import brain from "../Icons/wired-outline-1508-breastfeeding-hover-pinch.json"
-import memory from "../Icons/wired-outline-2353-horizontal-brain.json"
+import confident from "../Icons/wired-lineal-1509-infant-massage-hover-pinch.json"
+import brain from "../Icons/wired-lineal-1508-breastfeeding-hover-pinch.json"
+import memory from "../Icons/wired-lineal-2511-artificial-intelligence-ai-hover-pinch.json"
 import sharp from "../Icons/wired-outline-655-baby-girl-hover-happy.json"
-import target from "../Icons/wired-outline-1511-napping-hover-pinch.json"
+import target from "../Icons/wired-lineal-1511-napping-hover-pinch.json"
 import Button from "../components/button/Button"
 const SecondScreen=()=>{
 

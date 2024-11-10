@@ -3,12 +3,12 @@ import { Player } from "@lordicon/react";
 import ScrollReveal from "scrollreveal";
 import Button from "../button/Button";
 import styles from "./WhoFits.module.css";
-import fit from "../../Icons/wired-flat-1527-baby-day-care-hover-pinch.json";
+import fit from "../../Icons/wired-lineal-1529-parenting-parents-family-hover-pinch.json";
 
 const WhyMe = () => {
   useEffect(() => {
     ScrollReveal().reveal(`.${styles.header}`, {
-      duration: 600,
+      duration: 900,
       distance: "60px",
       origin: "top",
       easing: "ease-out",
@@ -18,6 +18,28 @@ const WhyMe = () => {
       delay: 100,
       scale: 1,
     });
+    ScrollReveal().reveal(`.${styles.checkmark}`, {
+        duration: 900,
+        distance: "60px",
+        origin: "right",
+        easing: "ease-out",
+        reset: false,
+        viewFactor: 0.2,
+        interval: 200,
+        delay: 100,
+        scale: 1,
+      });
+      ScrollReveal().reveal(`.${styles.description}`, {
+        duration: 900,
+        distance: "60px",
+        origin: "left",
+        easing: "ease-out",
+        reset: false,
+        viewFactor: 0.2,
+        interval: 200,
+        delay: 100,
+        scale: 1,
+      });
   }, []);
 
   const handleComplete = () => {
@@ -80,7 +102,7 @@ const WhyMe = () => {
           </div>
         </div>
       </div>
-      <Button text="אני מתאימה לתהליך, בואי נדבר" />
+      <Button text="לריאן, אני רוצה בואי נדבר!" />
     </>
   );
 };

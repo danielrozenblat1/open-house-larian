@@ -38,7 +38,7 @@ const WhoFits = () => {
     <>
       <div className={styles.wrapper}>
         <div className={styles.wrapY}>
-          <h1 className={styles.header}>למי מתאימים המפגשים?</h1>
+          <h1 className={styles.header}>למי מתאימות הסדנאות?</h1>
           <Player icon={fit} ref={playerRef} size="30%" loop={true} onComplete={handleComplete}></Player>
           
           <div className={styles.text}>

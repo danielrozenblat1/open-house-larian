@@ -45,8 +45,8 @@
 }
 
 .header {
-  font-size: 2rem;
-  font-family: "Assistant";
+  font-size: 3.5rem;
+  font-family: "Amatic";
   text-align: center;
   color: #8c7b6e; /* Darker brown */
   text-shadow: 2px 2px 3px rgba(140, 123, 110, 0.2);
@@ -99,7 +99,7 @@
 
   .title {
     display: flex;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: "Assistant";
     text-align: center;
     margin: 2% auto;
@@ -110,7 +110,7 @@
 
   .header {
     display: flex;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     font-family: "Assistant";
     text-align: center;
 
@@ -134,11 +134,11 @@
   }
 
   .title {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
   }
 
   .header {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
 
   .description {
@@ -154,12 +154,12 @@
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     width: 90%;
   }
 
   .header {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .description {
@@ -178,7 +178,7 @@
   }
 
   .title {
-    font-size: 2.7rem;
+    font-size: 3.7rem;
     width: 85%;
   }
 
@@ -197,7 +197,7 @@
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 4rem;
     width: 80%;
   }
 

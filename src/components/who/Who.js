@@ -10,7 +10,7 @@ const Who = () => {
       
       <div className={styles.founders}>
         <div className={styles.founder}>
-          <h1 className={styles.founderName}>לריאן לרמן</h1>
+          <h1 className={styles.founderName}>לריאן זוסינו לרמן</h1>
           <img src={larian} alt="לריאן לרמן" className={styles.founderImage} />
         </div>
         {/* <div className={styles.founder}>
