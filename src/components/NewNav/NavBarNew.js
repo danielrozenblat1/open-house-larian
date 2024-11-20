@@ -39,7 +39,13 @@ const NavBarNew = () => {
     }
   };
 
-  const menuItems = ['BABY . LOVE', 'מי אני' ];
+  const menuItems = [
+   
+    { text: 'מי אני', to: 'מי אני' },
+    { text: 'סוגי הסדנאות', to: 'סוגי הסדנאות' },
+    { text: 'שובר מתנה', to: 'סוגי הסדנאות' },
+    { text: 'BABY . LOVE תוכן', to: 'BABY . LOVE תוכן' },
+  ];
 
   return (
     <nav className={styles.navbar}>
@@ -59,14 +65,14 @@ const NavBarNew = () => {
             {menuItems.map((item, index) => (
               <ScrollLink 
                 key={index} 
-                to={item} 
+                to={item.to}
                 smooth={true} 
                 offset={-100}
                 duration={700} 
                 onClick={toggleMenu}
                 className={styles.mobileMenuItem}
               >
-                {item}
+                {item.text}
               </ScrollLink>
             ))}
             <div className={styles.center}>
@@ -81,11 +87,11 @@ const NavBarNew = () => {
             <ScrollLink 
               key={index} 
               offset={-100}
-              to={item} 
+              to={item.to}
               smooth={true} 
               duration={500}
             >
-              {item}
+              {item.text}
             </ScrollLink>
           ))}
         </div>

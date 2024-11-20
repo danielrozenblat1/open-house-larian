@@ -91,7 +91,7 @@ const WhyMe = () => {
           <div className={styles.text}>
             <span className={styles.checkmark}>✓</span>
             <div className={styles.description}>
-              קבוצות קטנות
+             יחס אישי
             </div>
           </div>
           <div className={styles.text}>

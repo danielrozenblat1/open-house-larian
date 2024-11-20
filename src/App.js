@@ -10,18 +10,24 @@ import WhoFits from './components/fit/WhoFits';
 import ByMe from './components/ByMe/ByMe';
 import FifthScreen from './screens/FifthScreen';
 import WhyMe from './components/fit/WhyMe';
+import WorkshopCards from './components/moreServices/MoreServices';
+
+import SixthScreen from './screens/SixthScreen';
+import FormScreen from './components/form/FormScreen';
 
 function App() {
   return <>
   <NavBarNew/>
   <FirstScreen/>
   {/* <FifthScreen/> */}
+  <SixthScreen/>
   <ThirdScreen/>
   <WhyMe/>
   <SecondScreen/>
   <Who/>
   <ForthScreen/>
   {/* <WhoFits/> */}
+<FormScreen/>
   <ByMe/>
   </>
 }

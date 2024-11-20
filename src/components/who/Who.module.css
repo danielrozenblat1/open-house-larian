@@ -4,6 +4,7 @@
     padding: 20px;
     font-family: 'Assistant';
     color: #333;
+    direction: rtl;
   }
   
   .title {

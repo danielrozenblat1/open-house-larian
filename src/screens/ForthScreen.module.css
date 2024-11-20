@@ -14,7 +14,11 @@
    width:80%;
     text-align: center;
   }
-
+.icon{
+  display: flex;
+  justify-content: center;
+margin: 2% auto;
+}
   .more {
     font-family: 'AssistantR';
     font-size: 1.5rem;
