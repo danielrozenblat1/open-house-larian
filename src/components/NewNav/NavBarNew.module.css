@@ -10,6 +10,7 @@
   padding: 0 20px;
   justify-content: space-between;
   box-sizing: border-box;
+ 
   position: fixed;
   top: 0;
   left: 0;
@@ -44,6 +45,7 @@
   width: 30px;
   height: 30px;
   font-size: 25px;
+  
   background-color: none;
   border-radius: 5px;
   color: black;
@@ -64,12 +66,14 @@
   display: flex;
   gap: 30px;
   direction: rtl;
+  
 }
 
 .menuItems a {
   color: black;
   text-decoration: none;
   font-family: "AssistantR";
+  
   font-size: 1.2rem;
   cursor: pointer;
 }

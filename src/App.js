@@ -19,14 +19,14 @@ function App() {
   return <>
   <NavBarNew/>
   <FirstScreen/>
-  {/* <FifthScreen/> */}
+
   <SixthScreen/>
   <ThirdScreen/>
   <WhyMe/>
   <SecondScreen/>
   <Who/>
   <ForthScreen/>
-  {/* <WhoFits/> */}
+
 <FormScreen/>
   <ByMe/>
   </>
