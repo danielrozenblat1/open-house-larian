@@ -1,34 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import FirstScreen from './screens/FirstScreen';
-import ThirdScreen from './screens/ThirdScreen';
-import SecondScreen from './screens/SecondScreen';
-import NavBarNew from './components/NewNav/NavBarNew';
-import Who from './components/who/Who';
-import ForthScreen from './screens/ForthScreen';
-import WhoFits from './components/fit/WhoFits';
-import ByMe from './components/ByMe/ByMe';
-import FifthScreen from './screens/FifthScreen';
-import WhyMe from './components/fit/WhyMe';
-import WorkshopCards from './components/moreServices/MoreServices';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import SixthScreen from './screens/SixthScreen';
-import FormScreen from './components/form/FormScreen';
+import SadnaotWrapper from './sadnaotWrapper/SadnaotWrapper';
+import ServicesWrapper from './servicesPage/ServicesWrapper';
 
 function App() {
   return <>
-  <NavBarNew/>
-  <FirstScreen/>
+   <Router>
+    <Routes>
 
-  <SixthScreen/>
-  <ThirdScreen/>
-  <WhyMe/>
-  <SecondScreen/>
-  <Who/>
-  <ForthScreen/>
-
-<FormScreen/>
-  <ByMe/>
+    <Route path="/סדנאות" index element={<SadnaotWrapper/>}/>
+    <Route path="/שירותים" index element={<ServicesWrapper/>}/>
+ </Routes>
+ </Router>
   </>
 }
 
