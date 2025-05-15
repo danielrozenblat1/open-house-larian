@@ -1,0 +1,319 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  
+  box-sizing: border-box;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/לריאן\ זוסמן\ -\ תמונה\ ראשית.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.content {
+  text-align: center;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descriptionWrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 3rem 1.5rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.emphasisWrapper {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e6d9d1;
+  padding: 0.3rem 2.5rem;
+  border-radius: 15px;
+  width: auto;
+  white-space: nowrap;
+}
+
+.emphasis {
+  color: black;
+  font-family: "Amatic";
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.description {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #333;
+  font-family: "AmaticR";
+  direction: rtl;
+  margin: 0;
+  padding: 0 6rem;
+}
+
+.titleWrapper {
+  width: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.6rem;
+  line-height: 1.4;
+  color: #000000;
+  font-weight: 100;
+  font-family: "HeeboR";
+  direction: rtl;
+  margin: 0 0 0.5rem;
+  white-space: nowrap;
+}
+
+.arrowWrapper {
+  margin-top: 10px;
+}
+
+.arrow {
+  color: #000000;
+  animation: bounce 1s infinite alternate ease-in-out;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(5px); }
+}
+
+/* Media Queries */
+@media (max-width: 350px) {
+  .container { 
+    padding: 1.2rem; 
+  }
+  .descriptionWrapper { 
+    padding: 2.2rem 1.2rem 1.2rem; 
+  }
+  .emphasis { 
+    font-size: 1.5rem; 
+  }
+  .description { 
+    font-size: 1.5rem;
+    padding: 0 2rem;
+  }
+  .title { 
+    font-size: 1.95rem;
+  }
+  .backgroundImage {
+    background-image: url('../images/לריאן\ זוסמן\ -\ תמונה\ ראשית.jpg');
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .container { 
+    padding: 1.2rem; 
+  }
+  .descriptionWrapper { 
+    padding: 2.2rem 1.2rem 1.2rem; 
+  }
+  .emphasis { 
+    font-size: 1.6rem; 
+  }
+  .description { 
+    font-size: 1.5rem;
+    padding: 0 5rem;
+  }
+  .title { 
+    font-size:1.6rem;
+  }
+  .backgroundImage {
+    background-image: url('../images/לריאן\ זוסמן\ -\ תמונה\ ראשית.jpg');
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .container { 
+    padding: 1.5rem; 
+  }
+  .descriptionWrapper { 
+    padding: 2.3rem 1.3rem 1.3rem; 
+  }
+  .emphasis { 
+    font-size: 1.7rem; 
+  }
+  .description { 
+    font-size: 1.7rem;
+    padding: 0 3rem;
+  }
+  .title { 
+    font-size: 2rem;
+  }
+  .backgroundImage {
+    background-image: url('../images/לריאן\ זוסמן\ -\ תמונה\ ראשית.jpg');
+  }
+}
+
+@media (min-width: 550px) and (max-width: 650px) {
+  .content { 
+    max-width: 90%; 
+  }
+  .descriptionWrapper { 
+    border-radius: 15px; 
+  }
+  .emphasisWrapper { 
+    top: -18px; 
+  }
+  .emphasis { 
+    font-size: 1.8rem; 
+  }
+  .description { 
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 0 3.5rem;
+  }
+  .title { 
+    font-size: 2.34rem;
+  }
+  .backgroundImage {
+    background-image: url('../images/לריאן\ זוסמן\ -\ תמונה\ ראשית.jpg');
+  }
+}
+
+@media (min-width: 650px) and (max-width: 750px) {
+  .content { 
+    max-width: 85%; 
+  }
+  .descriptionWrapper { 
+    padding: 2.4rem 1.4rem 1.4rem; 
+  }
+  .emphasis { 
+    font-size: 1.85rem; 
+  }
+  .description { 
+    font-size: 1.85rem;
+    padding: 0 4rem;
+  }
+  .title { 
+    font-size: 2.4rem;
+  }
+  .backgroundImage {
+    background-image: url('../images/לריאן\ זוסמן\ -\ תמונה\ ראשית.jpg');
+  }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+  .container { 
+    padding: 1.8rem; 
+  }
+  .content { 
+    max-width: 80%; 
+  }
+  .descriptionWrapper { 
+    margin-bottom: 1.5rem; 
+  }
+  .emphasis { 
+    font-size: 1.9rem; 
+  }
+  .description { 
+    font-size: 1.9rem;
+    padding: 0 4.5rem;
+  }
+  .title { 
+    font-size: 2.47rem;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 950px) {
+  .content { 
+    max-width: 75%; 
+  }
+  .descriptionWrapper { 
+    padding: 2.5rem 1.5rem 1.5rem; 
+  }
+  .emphasis { 
+    font-size: 1.95rem;
+    letter-spacing: 1px;
+  }
+  .description { 
+    font-size: 1.95rem;
+    padding: 0 5rem;
+  }
+  .title { 
+    font-size: 2.535rem;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1050px) {
+  .container { 
+    padding: 2rem; 
+  }
+  .content { 
+    max-width: 70%; 
+  }
+  .emphasis { 
+    font-size: 2rem;
+  }
+  .description { 
+    font-size: 2rem;
+    padding: 0 5.5rem;
+  }
+  .title { 
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1150px) {
+  .content { 
+    max-width: 65%; 
+  }
+  .descriptionWrapper { 
+    border-radius: 20px; 
+  }
+  .emphasisWrapper { 
+    top: -20px; 
+  }
+  .emphasis { 
+    font-size: 2rem;
+  }
+  .description { 
+    font-size: 2rem;
+    padding: 0 5.5rem;
+  }
+  .title { 
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .content { 
+    max-width: 60%; 
+  }
+  .emphasis { 
+    font-size: 2rem;
+  }
+  .description { 
+    font-size: 2rem;
+    padding: 0 6rem;
+  }
+  .title { 
+    font-size: 2.6rem;
+  }
+}

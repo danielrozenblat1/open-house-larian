@@ -1,0 +1,118 @@
+/* House.module.css */
+.minimalistBox {
+  width: 250px;
+  min-width: 280px;
+  min-height: 280px;
+  border: none;
+  padding: 24px;
+  position: relative;
+  margin: 25px auto;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* וריאציות צבעים - ניתן להוסיף כקלאסים נוספים */
+.minimalistBox:nth-of-type(1) {
+  background-color: #e6d9d1;
+}
+
+.minimalistBox:nth-of-type(2) {
+  background-color: #e6d9d1b7;
+}
+
+.minimalistBox:nth-of-type(3) {
+  background-color: rgba(229, 212, 199, 0.863);
+}
+
+.minimalistBox:nth-of-type(4) {
+  background-color: #e6d9d1;
+}
+
+.minimalistBox:nth-of-type(5) {
+  background-color: #e6d9d1b7;
+}
+
+.title {
+  font-family: 'AmaticR', sans-serif;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  color: #555048;
+  text-align: center;
+  font-size: 3.2em;
+  width: 100%;
+  z-index: 1;
+  padding: 0 12px;
+}
+
+.description {
+  font-family: 'AssistantR', sans-serif;
+  color: #7d756d;
+  text-align: center;
+  z-index: 1;
+  padding: 0 12px;
+  line-height: 1.5;
+  font-size: 0.8em;
+}
+
+@media (max-width: 350px) {
+  .minimalistBox {
+    margin: 50px auto;
+  }
+}
+
+@media (min-width: 350px) {
+  .minimalistBox {
+    min-width: 310px;
+    min-height: 310px;
+    padding: 27px;
+    margin-top: 12px;
+  }
+  
+  .title {
+    font-size: 2.1em;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .description {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 450px) {
+  .minimalistBox {
+    min-width: 310px;
+    min-height: 310px;
+    padding: 28px;
+    margin-top: 16px;
+  }
+  
+  .title {
+    font-size: 2.2em;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .description {
+    font-size: 0.95em;
+  }
+}
+
+@media (min-width: 600px) {
+  .minimalistBox {
+    min-width: 320px;
+    min-height: 320px;
+    padding: 28px;
+    margin: 70px 40px;
+  }
+  
+  .title {
+    font-size: 2em;
+    width: 70%;
+    margin: 0 auto;
+  }
+}

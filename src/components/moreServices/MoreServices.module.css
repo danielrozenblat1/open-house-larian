@@ -1,0 +1,204 @@
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+  }
+  
+  .container {
+    background-color: rgba(248, 247, 246, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(224, 216, 207, 0.3);
+    overflow: hidden;
+    border: 1px solid rgba(233, 227, 220, 0.3);
+    direction: rtl;
+    transition: all 0.3s ease;
+  }
+  
+
+  
+  .toggleButton {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .toggleButton:hover {
+    background-color: rgba(248, 247, 246, 0.9);
+  }
+  
+  .buttonContent {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .iconWrapper {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(224, 216, 207, 0.3);
+    border-radius: 8px;
+  }
+  
+  .mainIcon {
+    width: 2rem;
+    height: 2rem;
+    color: #555048;
+  }
+  
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+  
+  .title {
+    font-family: 'AmaticR', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 0;
+    color: #555048;
+    letter-spacing: -0.02em;
+  }
+  
+  .subtitle {
+    font-family: 'AssistantR', sans-serif;
+    color: #7d756d;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .toggleIcon {
+    color: #555048;
+    font-size: 1.75rem;
+    font-weight: 300;
+  }
+  
+  .contentWrapper {
+    transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+  }
+  
+  .content {
+    padding: 2rem;
+    background-color: rgba(248, 247, 246, 0.9);
+    border-top: 1px solid rgba(224, 216, 207, 0.3);
+  }
+  
+  .sectionTitle {
+    font-family: 'AmaticR', sans-serif;
+    font-weight: normal;
+    color: #555048;
+    margin-bottom: 1.25rem;
+    font-size: 2rem;
+  }
+  
+  .detailsList,
+  .agesList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .detailItem,
+  .ageItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'AssistantR', sans-serif;
+    color: #7d756d;
+  }
+  
+  .bullet {
+    color: #555048;
+    font-size: 1.25rem;
+  }
+  
+  .detailsSection,
+  .agesSection {
+    margin-bottom: 2rem;
+  }
+  
+  .ctaSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  .ctaButton {
+    background-color: #555048;
+    color: #F8F7F6;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #7d756d;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      margin: 0;
+    }
+    
+    .iconWrapper {
+      width: 3rem;
+      height: 3rem;
+    }
+    
+    .mainIcon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    
+    .title {
+      font-size: 2.2rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Additional responsive title sizes */
+  @media (min-width: 850px) and (max-width: 950px) {
+    .title {
+      font-size: 2.8rem;
+    }
+  }
+  
+  @media (min-width: 950px) and (max-width: 1050px) {
+    .title {
+      font-size: 2.9rem;
+    }
+  }
+  
+  @media (min-width: 1050px) {
+    .title {
+      font-size: 3rem;
+    }
+  }

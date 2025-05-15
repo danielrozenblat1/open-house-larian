@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.shape {
+  width: 320px;
+  height: 320px;
+  background: linear-gradient(135deg, #f1ece6 0%, #e6d9d1 100%);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 40px #e0d8d0, -10px -10px 40px #ffffff;
+  transition: all 1s ease;
+  overflow: hidden;
+  position: relative;
+}
+.shape::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(230, 217, 209, 0.3) 0%, rgba(241, 236, 230, 0) 70%);
+  transform: rotate(30deg);
+}
+.shape:hover {
+  transform: scale(1.05);
+}
+.title {
+  font-family: 'Assistant';
+  color: #4a4a4a;
+  margin-bottom: 10px;
+  text-align: right;
+  direction: rtl;
+  width: 100%;
+  font-size: 1.4rem;
+  position: relative;
+  z-index: 1;
+}
+.description {
+  font-family: 'AssistantR';
+  direction: rtl;
+  color: #6a6a6a;
+  text-align: right;
+  width: 100%;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  max-height: 180px;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Media Queries */
+@media (max-width: 350px) {
+  .container {
+    height: 300px;
+  }
+  .shape {
+    width: 240px;
+    height: 240px;
+    padding: 30px;
+  }
+  .title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .description {
+    font-size: 0.9rem;
+    max-height: 135px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .container {
+    height: 350px;
+  }
+  .shape {
+    width: 280px;
+    height: 280px;
+    padding: 35px;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .description {
+    font-size: 1rem;
+    max-height: 158px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .container {
+    height: 375px;
+  }
+  .shape {
+    width: 300px;
+    height: 300px;
+    padding: 38px;
+  }
+  .title {
+    font-size: 1.3rem;
+    margin-bottom: 19px;
+  }
+  .description {
+    font-size: 1.05rem;
+    max-height: 169px;
+  }
+}

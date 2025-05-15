@@ -1,0 +1,128 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    direction: rtl;
+    margin:3% auto;
+  }
+  .title {
+    font-family: "Amatic";
+    font-size: 3.5rem;
+    direction: rtl;
+   margin:2% auto;
+   width:80%;
+    text-align: center;
+  }
+.icon{
+  display: flex;
+  justify-content: center;
+margin: 2% auto;
+}
+  .more {
+    font-family: 'AssistantR';
+    font-size: 1.5rem;
+    direction: rtl;
+   margin:2% auto;
+    text-align: center;
+    width:60%;
+  }
+  @media (max-width: 350px) {
+    .row {
+      margin: 2% auto;
+    }
+    .title {
+      font-size: 2.8rem;
+      width:90%;
+    }
+    .more {
+      font-size: 1rem;
+      margin: 1% auto;
+      width:90%;
+    }
+  }
+  
+  @media (min-width: 350px) and (max-width: 450px) {
+    .title {
+      font-size: 3rem;
+      width:85%;
+    }
+    .more {
+      font-size: 1.1rem;
+      width:85%;
+    }
+  }
+  
+  @media (min-width: 450px) and (max-width: 550px) {
+    .title {
+      font-size: 3.1rem;
+    }
+    .more {
+      font-size: 1.2rem;
+      width:85%;
+    }
+  }
+  
+  @media (min-width: 550px) and (max-width: 650px) {
+    .title {
+      font-size: 3.2rem;
+    }
+    .more {
+      font-size: 1.3rem;
+      width:75%;
+    }
+  }
+  
+  @media (min-width: 650px) and (max-width: 750px) {
+    .title {
+      font-size: 3.3rem;
+    }
+    .more {
+      font-size: 1.35rem;
+    }
+  }
+  
+  @media (min-width: 750px) and (max-width: 850px) {
+    .title {
+      font-size: 3.35rem;
+    }
+    .more {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (min-width: 850px) and (max-width: 950px) {
+    .title {
+      font-size: 3.4rem;
+    }
+    .more {
+      font-size: 1.45rem;
+    }
+  }
+  
+  @media (min-width: 950px) and (max-width: 1050px) {
+    .title {
+      font-size: 3.45rem;
+    }
+    .more {
+      font-size: 1.47rem;
+    }
+  }
+  
+  @media (min-width: 1050px) and (max-width: 1150px) {
+    .title {
+      font-size: 3.47rem;
+    }
+    .more {
+      font-size: 1.48rem;
+    }
+  }
+  
+  @media (min-width: 1150px) and (max-width: 1250px) {
+    .title {
+      font-size: 3.48rem;
+    }
+    .more {
+      font-size: 1.50rem;
+    }
+  }

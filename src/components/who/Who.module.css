@@ -1,0 +1,188 @@
+.aboutUs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Assistant';
+    color: #333;
+    direction: rtl;
+  }
+  
+  .title {
+    font-size: 3.5rem;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin:10px auto;
+    font-family: "Amatic";
+    color: #1a1a1a;
+  }
+  
+  .founders {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .founder {
+    text-align: center;
+  }
+  
+  .founderName {
+    font-size: 40px;
+    font-family: "AmaticR";
+    margin: 10px 0;
+  }
+  
+  .founderImage {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 2px 10px #555;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .description {
+    font-family: 'AssistantR';
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.6;
+    width:90%;
+    margin:15px auto;
+border-radius: 25px;
+
+padding:10px
+  }
+
+
+  @media (max-width: 350px) {
+    .title {
+      font-size: 1.8rem;
+    }
+    .founderImage {
+      width: 120px;
+      height: 120px;
+    }
+    .description {
+      font-size: 1.1rem;
+      width:95%
+    }
+  }
+  
+  /* 350px - 450px */
+  @media (min-width: 350px) and (max-width: 450px) {
+    .title {
+      font-size: 2rem;
+    }
+    .founderImage {
+      width: 130px;
+      height: 130px;
+    }
+    .description {
+      font-size: 1.15rem;
+      width:90%
+    }
+  }
+  
+  /* 450px - 550px */
+  @media (min-width: 450px) and (max-width: 550px) {
+    .title {
+      font-size: 2.2rem;
+    }
+    .founderImage {
+      width: 140px;
+      height: 140px;
+    }
+    .description {
+      font-size: 1.2rem;
+      width:85%
+    }
+  }
+  
+  /* 550px - 650px */
+  @media (min-width: 550px) and (max-width: 650px) {
+    .title {
+      font-size: 2.4rem;
+    }
+    .founders {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .description {
+      font-size: 1.25rem;
+      width:70%
+    }
+  }
+  
+  /* 650px - 750px */
+  @media (min-width: 650px) and (max-width: 750px) {
+    .title {
+      font-size: 2.6rem;
+    }
+    .founderImage {
+      width: 160px;
+      height: 160px;
+    }
+    .description {
+      font-size: 1.35rem;
+      width:70%
+    }
+  }
+  
+  /* 750px - 850px */
+  @media (min-width: 750px) and (max-width: 850px) {
+    .title {
+      font-size: 2.8rem;
+    }
+    .founderImage {
+      width: 170px;
+      height: 170px;
+    }
+    .description {
+      font-size: 1.35rem;
+      width:60%
+    }
+  }
+  
+  /* 850px - 950px */
+  @media (min-width: 850px) and (max-width: 950px) {
+    .title {
+      font-size: 3rem;
+    }
+    .founderImage {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  
+  /* 950px - 1050px */
+  @media (min-width: 950px) and (max-width: 1050px) {
+    .title {
+      font-size: 3.2rem;
+    }
+    .founderImage {
+      width: 190px;
+      height: 190px;
+    }
+  }
+  
+  /* 1050px - 1150px */
+  @media (min-width: 1050px) and (max-width: 1150px) {
+    .title {
+      font-size: 3.3rem;
+    }
+    .founderImage {
+      width: 195px;
+      height: 195px;
+    }
+  }
+  
+  /* 1150px - 1250px */
+  @media (min-width: 1150px) and (max-width: 1250px) {
+    .title {
+      font-size: 3.4rem;
+    }
+    .founderImage {
+      width: 200px;
+      height: 200px;
+    }
+  }

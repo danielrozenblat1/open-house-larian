@@ -1,0 +1,241 @@
+.xmark {
+  font-size: 30px; 
+  color: #6a6a6a; /* Darker gray */
+}
+
+.checkmark {
+  font-size: 30px; 
+  color: #b0988a; /* Soft brown */
+}
+
+.wrapY {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  direction: rtl;
+  border-radius: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  direction: rtl;
+  width: 85%;
+  color: #4a4a4a; /* Dark gray */
+  padding: 15px 20px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-family: "Assistant";
+  text-align: center;
+  margin: 2% auto;
+  color: #b0988a; /* Soft brown */
+  justify-content: center;
+  text-shadow: 2px 2px 5px rgba(176, 152, 138, 0.3);
+}
+
+.header {
+  font-size: 3.5rem;
+  font-family: "Amatic";
+  text-align: center;
+  color: #8c7b6e; /* Darker brown */
+  text-shadow: 2px 2px 3px rgba(140, 123, 110, 0.2);
+}
+
+.description {
+  font-size: 1.4rem;
+  font-family: "AssistantR";
+  text-align: right;
+  width: calc(100% - 40px);
+  margin-right: 10px;
+  color: #4a4a4a; /* Dark gray */
+}
+@media only screen and (max-width: 350px) {
+  .xmark {
+    font-size: 30px; 
+    color: #87CEFA; /* Light Sky Blue */
+  }
+
+  .checkmark {
+    font-size: 30px; 
+    color: #FFB347; /* Light Orange */
+  }
+
+  .wrapY, .wrapN {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .title {
+    display: flex;
+    font-size: 2.5rem;
+    font-family: "Assistant";
+    text-align: center;
+    margin: 2% auto;
+    justify-content: center;
+   
+
+  }
+
+  .header {
+    display: flex;
+    font-size: 2.6rem;
+    font-family: "Assistant";
+    text-align: center;
+
+ 
+  }
+
+  .description {
+    display: flex;
+    font-size: 1rem;
+    font-family: "AssistantR";
+    text-align: right;
+    width: 85%;
+    padding-right: 15px;
+
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .wrapY, .wrapN {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 3.2rem;
+  }
+
+  .header {
+    font-size: 2.8rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    width: 90%;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 550px) {
+  .wrapY, .wrapN {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    width: 90%;
+  }
+
+  .header {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 650px) {
+  .wrapY {
+    width: 80%;
+  }
+
+  .wrapN {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 3.7rem;
+    width: 85%;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 850px) {
+  .wrapY {
+    width: 70%;
+  }
+
+  .wrapN {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 4rem;
+    width: 80%;
+  }
+
+  .description {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1050px) {
+  .wrapY {
+    width: 50%;
+  }
+
+  .wrapN {
+    width: 60%;
+  }
+
+  .title {
+    font-size: 3rem;
+    width: 80%;
+  }
+
+  .description {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1250px) {
+  .wrapY, .wrapN {
+    width: 35%;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+    width: 85%;
+  }
+}

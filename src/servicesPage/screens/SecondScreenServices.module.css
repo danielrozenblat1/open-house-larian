@@ -1,0 +1,390 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    direction: rtl;
+    overflow: hidden;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #7D9AAC;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: normal;
+    font-family: 'Assistant', sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  .journeyPath {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    max-width: 24rem;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .progressBackground {
+    fill: none;
+    stroke: #EFE4DC;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-dasharray: 12,12;
+  }
+  
+  .progressPath {
+    fill: none;
+    stroke: #7D9AAC;
+    stroke-width: 3;
+    stroke-linecap: round;
+    filter: url(#glow);
+    transition: stroke-dashoffset 0.1s ease-out;
+  }
+  
+  .timelineContent {
+    position: relative;
+    z-index: 2;
+    padding: 0 1rem;
+  }
+  
+  .timelineItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 6rem 0;
+  }
+  
+  .timelineItem.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .right {
+    padding-left: calc(50% + 2rem);
+    justify-content: flex-start;
+  }
+  
+  .left {
+    padding-right: calc(50% + 2rem);
+    justify-content: flex-end;
+  }
+  
+  .circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #7D9AAC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 3;
+  }
+  
+  .circle::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(125, 154, 172, 0.1);
+    transform: scale(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .activeCircle {
+    transform: translateX(-50%) scale(1.1);
+    border-color: #7D9AAC;
+    box-shadow: 
+      0 0 0 4px rgba(125, 154, 172, 0.1),
+      0 4px 12px rgba(125, 154, 172, 0.2);
+    animation: glow 2s infinite;
+  }
+  
+  .hoveredCircle {
+    transform: translateX(-50%) scale(1.25);
+  }
+  
+  .activeCircle::before {
+    transform: scale(1.5);
+  }
+  
+  .checkIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #7D9AAC;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 1px 2px rgba(125, 154, 172, 0.2));
+  }
+  
+  .numberText {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #7D9AAC;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .content {
+    background: white;
+    padding: 1.75rem;
+    border-radius: 0.75rem;
+    max-width: 24rem;
+    width: 100%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+      0 4px 6px rgba(125, 154, 172, 0.1),
+      0 0 0 1px rgba(125, 154, 172, 0.05);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0)
+    );
+    pointer-events: none;
+  }
+  
+  .hoveredContent {
+    transform: translateY(-4px);
+    box-shadow: 
+      0 8px 16px rgba(125, 154, 172, 0.12),
+      0 0 0 1px rgba(125, 154, 172, 0.08);
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  }
+  
+  .stepTitle {
+    font-size: 1.25rem;
+    color: #7D9AAC;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    font-family: 'Assistant', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .stepIcon {
+    width: 1rem;
+    height: 1rem;
+    color: #7D9AAC;
+  }
+  
+  .stepText {
+    color: #7C99AC;
+    line-height: 1.6;
+    font-family: 'Assistant', sans-serif;
+    position: relative;
+  }
+  
+  .hoverArrow {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #7D9AAC;
+    animation: bounceRight 1s infinite;
+  }
+  
+  /* Timeline Line Styles */
+  .right::before,
+  .left::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 2rem;
+    height: 2px;
+    background: #7D9AAC;
+    opacity: 0.3;
+  }
+  
+  .right::before {
+    right: calc(50% + 1.25rem);
+  }
+  
+  .left::before {
+    left: calc(50% + 1.25rem);
+  }
+  
+  /* Animations */
+  @keyframes glow {
+    0% {
+      box-shadow: 
+        0 0 0 4px rgba(125, 154, 172, 0.1),
+        0 4px 12px rgba(125, 154, 172, 0.2);
+    }
+    50% {
+      box-shadow: 
+        0 0 0 8px rgba(125, 154, 172, 0.05),
+        0 4px 16px rgba(125, 154, 172, 0.1);
+    }
+    100% {
+      box-shadow: 
+        0 0 0 4px rgba(125, 154, 172, 0.1),
+        0 4px 12px rgba(125, 154, 172, 0.2);
+    }
+  }
+  
+  @keyframes bounceRight {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-4px);
+    }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .content {
+      max-width: 20rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .timeline {
+      padding: 1rem 0;
+    }
+  
+    .journeyPath {
+      left: 2rem;
+      transform: none;
+      max-width: 16rem;
+    }
+  
+    .timelineItem {
+      margin: 3rem 0;
+    }
+  
+    .right,
+    .left {
+      padding-left: 4rem;
+      padding-right: 1rem;
+      justify-content: flex-start;
+    }
+  
+    .circle {
+      left: 2rem;
+    }
+  
+    .content {
+      max-width: calc(100% - 2rem);
+      margin-left: 2rem;
+    }
+  
+    .right::before,
+    .left::before {
+      left: 3.25rem;
+      width: 1.5rem;
+    }
+  
+    .title {
+      font-size: 1.75rem;
+      margin-bottom: 3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+  
+    .journeyPath {
+      max-width: 12rem;
+    }
+  
+    .content {
+      padding: 1.25rem;
+    }
+  
+    .stepTitle {
+      font-size: 1.125rem;
+    }
+  
+    .timelineItem {
+      margin: 2.5rem 0;
+    }
+  
+    .circle {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+  
+    .numberText {
+      font-size: 0.875rem;
+    }
+  
+    .checkIcon {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  
+  /* High Contrast Mode */
+  @media (prefers-contrast: high) {
+    .content {
+      border: 2px solid #7D9AAC;
+    }
+  
+    .circle {
+      border-width: 3px;
+    }
+  
+    .stepTitle,
+    .stepText {
+      color: #000;
+    }
+  }
+  
+  /* Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    .timelineItem,
+    .content,
+    .circle,
+    .progressPath {
+      transition: none;
+    }
+  
+    .progressPath {
+      animation: none;
+    }
+  
+    .activeCircle {
+      animation: none;
+    }
+  }

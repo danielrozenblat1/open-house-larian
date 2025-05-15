@@ -1,0 +1,78 @@
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% auto;
+}
+
+.shape {
+  width: 160px;
+  padding: 0.8rem 1.2rem;
+  background: linear-gradient(to right, #e6d9d1, #f1ece6);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 10px #e0d8d0, -4px -4px 10px #ffffff;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+.shape:hover {
+  background: linear-gradient(to right, #f1ece6, #e6d9d1);
+  box-shadow: 2px 2px 5px #e0d8d0, -2px -2px 5px #ffffff;
+}
+
+.buttonText {
+  font-family: 'Assistant', sans-serif;
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+@media (min-width: 350px) {
+  .shape {
+    width: 180px;
+    padding: 0.9rem 1.3rem;
+    border-radius: 18px;
+  }
+
+  .buttonText {
+    font-size: 1.15rem;
+  }
+  .buttonWrapper {
+    margin: 15px auto;
+  }
+}
+
+@media (min-width: 450px) {
+  .shape {
+    width: 190px;
+    padding: 0.95rem 1.4rem;
+    border-radius: 19px;
+  }
+  .buttonWrapper {
+    margin: 15px auto;
+  }
+  .buttonText {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 550px) {
+  .shape {
+    width: 200px;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 6px 6px 15px #e0d8d0, -6px -6px 15px #ffffff;
+  }
+
+  .buttonText {
+    font-size: 1.2rem;
+  }
+}
