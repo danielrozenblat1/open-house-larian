@@ -48,7 +48,7 @@ const WorkshopCard = ({ type, content }) => {
           <div className={styles.detailsSection}>
             {content.details && (
               <>
-                {type !== 'gift' && <h3 className={styles.sectionTitle}>הסדנה כוללת:</h3>}
+                {type !== 'gift' && <h3 className={styles.sectionTitle}>{type === 'private' ? 'התהליך כולל:' : 'הסדנה כוללת:'}</h3>}
                 <ul className={styles.detailsList}>
                   {content.details.map((detail, index) => (
                     <li key={index} className={styles.detailItem}>
@@ -63,7 +63,7 @@ const WorkshopCard = ({ type, content }) => {
 
           {content.ages && (
             <div className={styles.agesSection}>
-              <h3 className={styles.sectionTitle}>גילאים:</h3>
+              <h3 className={styles.sectionTitle}>{type === 'group' ? 'הסדנאות מחולקות לפי סגמנטים ושלבי התפתחות:' : 'גילאים:'}</h3>
               <ul className={styles.agesList}>
                 {content.ages.map((age, index) => (
                   <li key={index} className={styles.ageItem}>
@@ -101,22 +101,24 @@ const WorkshopCards = () => {
         "אפרטיף בוקר"
       ],
       ages: [
-        "לידה - 3 חודשים",
-        "3-6 חודשים"
+        'סדנת "מגלים את העולם" - גילאי לידה עד 3 חודשים',
+        'סדנת "מתגלגלים בעולם" - גילאי 3-6 חודשים',
+        'סדנת "נעים בעולם" - זוחלים +'
       ],
       cta: "אני אשמח לפרטים!"
     },
     private: {
-      title: "סדנאות אישיות",
+      title: "תהליך פרטני",
       subtitle: "תהליך אישי באווירה אינטימית ומותאמת עבור מי שאוהב תהליכי ליווי והדרכה פרטנית",
       details: [
-        "4 מפגשי ליווי והדרכה",
-        "פעם בשבוע",
-        "למשך שעה/שעתיים מרוכזות (לבחירה)",
-        "המפגש יכול להתקיים בבית הלקוח או בקליניקה שלי (לבחירה)",
-        "הסדנה נבנת ומותאמת באופן אישי וייחודי עבור ההורה והילד ולשלב ההתפתחותי בו התינוק נמצא"
+        "תהליך ליווי נבנה ומותאם באופן אישי וייחודי עבור ההורה והילד ולשלב ההתפתחותי בו הילד נמצא",
+        "קבלת ידע לעידוד התפתחות וליצירת חיבור עמוק ועשיר יותר עם הילד",
+        "מתאים גם להורה שרוצה תהליך פרטני ו/או להורה שילדו בעיכוב התפתחותי מאובחן ורוצה לקבל מענה, כלים וידע על מנת לעודד התפתחות מיטבית ואיכותית",
+        "מספר המפגשים נקבע באופן אישי ובהתאם לצורך",
+        "משך כל מפגש הינו כשעה",
+        "המפגש מתקיים אצלי בקליניקה"
       ],
-      ages: ["לגילאי לידה עד שנה וחצי"],
+      ages: ["לגילאי לידה עד 3 שנים"],
       cta: "אני אשמח לפרטים!"
     },
     gift: {

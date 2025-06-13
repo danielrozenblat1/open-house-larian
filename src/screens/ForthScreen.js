@@ -21,7 +21,7 @@ const ForthScreen=()=>{
 return <>
 <div className={styles.title}>מתנה ממני אלייך</div>
 <div className={styles.icon}><Player icon={gift} ref={playerRef} size="30%" loop={true} onComplete={handleComplete}></Player></div>
-<div className={styles.more}>בסדנה תקבלו הזדמנות להתייעץ איתי בכל נושא בתחום הדרכת הורים, ליווי התפתחותי, גמילה, ייעוץ שינה ועיסוי תינוקות</div>
+<div className={styles.more}>הענקת שובר מתנה לסדנא שלי או למפגש פרטני אצלי בקליניקה זו הזדמנות להתייעץ איתי בכל נושא בתחום הדרכת הורים, ליווי התפתחותי, גמילה, ייעוץ שינה ועיסוי תינוקות</div>
 {/* <div className={styles.row}>
 <Shape title="עיסוי תינוקות" description="שירגיע את התינוק, יחזק את הקשר ביניכם ויתרום להתפתחות הפיזית והרגשית."/>
 <Shape title="הדרכת הורים בגישת אדלר" description=" שתעניק לכם כלים לתקשורת חיובית, בניית ביטחון עצמי והבנה עמוקה יותר של עולמו של התינוק."/>
