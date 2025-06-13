@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from "react-scroll";
-import { NavLink } from 'react-router-dom'; // שימוש ב-NavLink במקום Link רגיל
+import { NavLink } from 'react-router-dom';
 import styles from './NavBarNew.module.css';
 import logo from '../../images/לריאן זוסמן לוגו.png';
 import { FaInstagram, FaFacebook, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
@@ -40,28 +40,30 @@ const NavBarNew = () => {
     }
   };
 
-  // פונקציה חדשה להתמודדות עם מעבר לדף חדש
+  // פונקציה להתמודדות עם מעבר לדף חדש
   const handleNavigation = () => {
-    // סגירת התפריט אם הוא פתוח
     if (isMenuOpen) {
       toggleMenu();
     }
-    
-    // גלילה לתחילת העמוד - מבוצעת מיד וגם שוב אחרי שהניווט מסתיים
     window.scrollTo(0, 0);
-    
-    // מבצע שוב גלילה לתחילת העמוד לאחר השהייה קצרה כדי להבטיח שהניווט הסתיים
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 100);
   };
 
+  // פונקציה להתמודדות עם scroll
+  const handleScrollClick = () => {
+    if (isMenuOpen) {
+      toggleMenu();
+    }
+  };
+
   const menuItems = [
-    { text: 'מי אני', to: 'מי אני', type: 'scroll' },
-    { text: 'סוגי הסדנאות', to: 'סוגי הסדנאות', type: 'scroll' },
-    { text: 'BABY . LOVE תוכן', to: 'BABY . LOVE תוכן', type: 'scroll' },
-    { text: 'שובר מתנה', to: 'סוגי הסדנאות', type: 'scroll' },
-    { text: 'לדף הסדנאות', to: '/סדנאות', type: 'route' },
+    { text: 'הדרכת הורים', to:'הדרכת הורים', type: 'scroll' },
+    { text: 'ייעוץ שינה', to:'ייעוץ שינה', type: 'scroll' },
+    { text: 'ליווי התפתחותי', to:'ליווי התפתחותי', type: 'scroll' },
+    { text: 'ייעוץ גמילה', to:'ייעוץ גמילה', type: 'scroll' },
+    { text: 'לדף הסדנאות', to: '/workshops', type: 'route' },
   ];
 
   return (
@@ -87,7 +89,7 @@ const NavBarNew = () => {
                   smooth={true} 
                   offset={-100}
                   duration={700} 
-                  onClick={toggleMenu}
+                  onClick={handleScrollClick}
                   className={styles.mobileMenuItem}
                 >
                   {item.text}
@@ -115,10 +117,11 @@ const NavBarNew = () => {
             item.type === 'scroll' ? (
               <ScrollLink 
                 key={index} 
-                offset={-100}
                 to={item.to}
                 smooth={true} 
+                offset={-100}
                 duration={500}
+                className={styles.menuItem}
               >
                 {item.text}
               </ScrollLink>

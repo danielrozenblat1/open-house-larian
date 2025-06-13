@@ -4,6 +4,7 @@
     gap: 1.5rem;
     max-width: 42rem;
     margin: 0 auto;
+    
     padding: 1.25rem;
   }
   
@@ -16,6 +17,7 @@
     overflow: hidden;
     border: 1px solid rgba(233, 227, 220, 0.3);
     direction: rtl;
+      position: relative;
     transition: all 0.3s ease;
   }
   

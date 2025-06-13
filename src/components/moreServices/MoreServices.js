@@ -21,7 +21,7 @@ const WorkshopCard = ({ type, content }) => {
   };
 
   return (
-    <div className={styles.container} id="סוגי הסדנאות">
+    <div className={styles.container} id={content.id}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={styles.toggleButton}
@@ -31,6 +31,7 @@ const WorkshopCard = ({ type, content }) => {
             {type === 'group' && <Users className={styles.mainIcon} />}
             {type === 'private' && <Home className={styles.mainIcon} />}
             {type === 'gift' && <Gift className={styles.mainIcon} />}
+            {type === 'consultation' && <Users className={styles.mainIcon} />}
           </div>
           <div className={styles.titleContainer}>
             <h2 className={styles.title}>{content.title}</h2>
@@ -92,9 +93,13 @@ const WorkshopCard = ({ type, content }) => {
 const WorkshopCards = () => {
   const workshopContents = {
     group: {
+      id: "הדרכת הורים",
       title: "סדנאות קבוצתיות",
       subtitle: "סדנאות בקבוצות קטנות ליצירת אינטימיות, יחס אישי, תמיכה והעשרה",
       details: [
+        "תהליך המשלב ליווי התפתחותי, ייעוץ שינה הוליסטי והדרכת הורים אדלריאנית",
+        "תוכן מעמיק על כל סגמנט עיוני ומעשי",
+        "קבוצות קטנות ואינטימיות המאפשרות קבלת יחס אישי ומותאם לכל אמא ותינוק",
         "4 מפגשי הדרכה וליווי",
         "פעם בשבוע",
         "למשך שעה וחצי",
@@ -108,6 +113,7 @@ const WorkshopCards = () => {
       cta: "אני אשמח לפרטים!"
     },
     private: {
+      id: "ייעוץ שינה",
       title: "תהליך פרטני",
       subtitle: "תהליך אישי באווירה אינטימית ומותאמת עבור מי שאוהב תהליכי ליווי והדרכה פרטנית",
       details: [
@@ -122,14 +128,28 @@ const WorkshopCards = () => {
       cta: "אני אשמח לפרטים!"
     },
     gift: {
+      id: "ליווי התפתחותי",
       title: "שובר מתנה ליולדות/להורים בקהילה הגאה",
       subtitle: "רוצים להעניק מתנה ייחודית ויוצאת דופן?",
       details: [
-        "הענקת שובר מתנה לאחת מהסדנאות שלי זו הזדמנות אדירה להעניק מתנה עם משמעות וערך עליון",
+        "הענקת שובר מתנה לסדנא שלי או למפגש פרטני אצלי בקליניקה זו הזדמנות אדירה להעניק מתנה עם משמעות וערך עליון",
         "בשובר ניתן לרשום את שם מקבל המתנה ולמי המתנה מוענקת",
         "השובר נשלח אל הלקוח באופן אישי"
       ],
       cta: "אני רוצה להעניק שובר מתנה"
+    },
+    consultation: {
+      id: "ייעוץ גמילה",
+      title: "ייעוץ גמילה",
+      subtitle: "ליווי עדין ומקצועי בתהליכי גמילה",
+      details: [
+        "תוכנית גמילה מותאמת לגיל ולילד",
+        "הדרכה לביצוע תהליך גמילה הדרגתי ועדין",
+        "מתן כלים להתמודדות עם התנגדויות",
+        "ליווי רגשי של ההורים בתהליך"
+      ],
+      ages: ["מגיל 6 חודשים ומעלה"],
+      cta: "אני אשמח לפרטים!"
     }
   };
 
@@ -138,8 +158,10 @@ const WorkshopCards = () => {
       <WorkshopCard type="group" content={workshopContents.group} />
       <WorkshopCard type="private" content={workshopContents.private} />
       <WorkshopCard type="gift" content={workshopContents.gift} />
+      <WorkshopCard type="consultation" content={workshopContents.consultation} />
     </div>
   );
 };
+
 
 export default WorkshopCards;

@@ -3,11 +3,11 @@ import { ChevronDown, Heart, Eye,Moon, Brain, Baby, Star, CheckCircle, Shield, U
 import styles from './ThirdScreenServices.module.css';
 import Button from '../../components/button/Button';
 
-const ServiceBox = ({ title, children, icon: Icon }) => {
+const ServiceBox = ({ title, children, icon: Icon, id }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={styles.serviceWrapper}>
+    <div className={styles.serviceWrapper} id={id}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`${styles.serviceButton} ${isOpen ? styles.active : ''}`}
@@ -45,6 +45,7 @@ const Services = () => {
       <ServiceBox 
         title="הדרכת הורים בגישה האדלריאנית" 
         icon={Heart}
+        id="הדרכת הורים"
       >
         <div className={styles.serviceContent}>
           <p className={styles.description}>
@@ -108,6 +109,7 @@ const Services = () => {
       <ServiceBox 
         title="ייעוץ וליווי תהליכי שינה" 
         icon={Moon}
+        id="ייעוץ שינה"
       >
         <div className={styles.serviceContent}>
           <p className={styles.description}>
@@ -185,6 +187,7 @@ const Services = () => {
       <ServiceBox 
         title="ליווי התפתחותי לתינוקות ופעוטות" 
         icon={Brain}
+        id="ליווי התפתחותי"
       >
         <div className={styles.serviceContent}>
           <p className={styles.description}>
@@ -273,6 +276,7 @@ const Services = () => {
       <ServiceBox 
         title="ייעוץ גמילה (חיתולים, מוצץ...)" 
         icon={Baby}
+        id="ייעוץ גמילה"
       >
         <div className={styles.serviceContent}>
           <p className={styles.description}>

@@ -44,7 +44,7 @@ const NavBarNew = () => {
     { text: 'סוגי הסדנאות', to: 'סוגי הסדנאות', type: 'scroll' },
     { text: 'BABY . LOVE תוכן', to: 'BABY . LOVE תוכן', type: 'scroll' },
     { text: 'שובר מתנה', to: 'סוגי הסדנאות', type: 'scroll' },
-    { text: 'לדף השירותים שלי', to: '/שירותים', type: 'link' }, // הוספת עמודה חדשה
+    { text: 'לדף השירותים שלי', to: '/services', type: 'link' }, // הוספת עמודה חדשה
   ];
 
   return (

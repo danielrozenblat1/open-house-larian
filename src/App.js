@@ -10,8 +10,8 @@ function App() {
    <Router>
     <Routes>
 
-    <Route path="/סדנאות" index element={<SadnaotWrapper/>}/>
-    <Route path="/שירותים" index element={<ServicesWrapper/>}/>
+    <Route path="/workshops" index element={<SadnaotWrapper/>}/>
+    <Route path="/services" index element={<ServicesWrapper/>}/>
  </Routes>
  </Router>
   </>
